@@ -1,0 +1,22 @@
+package Prova;
+
+import java.util.Scanner;
+import java.util.ArrayList;
+public class Teste02 {
+
+	public static void main(String[] args) {
+
+		ArrayList <Double> FaturamentoDiario = new ArrayList<Double>();
+	
+		FaturamentoDiario.add((double) 10.000);
+		
+		System.out.printf("Segunda" + FaturamentoDiario);
+			
+		
+		
+		
+	     
+        
+	
+	}
+}

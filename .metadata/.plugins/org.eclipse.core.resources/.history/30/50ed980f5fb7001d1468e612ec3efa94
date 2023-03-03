@@ -1,0 +1,28 @@
+package Prova;
+
+import java.util.Scanner;
+import java.util.ArrayList;
+public class Teste02 {
+
+	public static void main(String[] args) {
+
+		double[][] faturamentosDiarios = new double [28] [5];
+		
+		faturamentosDiarios [0] [0] = 20.000;
+		faturamentosDiarios [1] [1] = 15.000;
+		faturamentosDiarios [2] [2] = 5.000;
+		faturamentosDiarios [3] [3] = 50.000;
+		faturamentosDiarios [4] [4] = 25.000;
+		
+		for (int i=0; i <faturamentosDiarios.length; i++) {
+			System.out.println(" " + (i+1) + faturamentosDiarios.length);
+		}
+		
+		
+		
+		
+	     
+        
+	
+	}
+}

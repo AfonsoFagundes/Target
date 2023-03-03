@@ -1,0 +1,46 @@
+package Prova;
+
+import java.util.Scanner;
+
+    public class FaturamentoDistribuidora {
+	public static void main(String[] args) {
+		// vetor de faturamento diário da distribuidora
+		double[] faturamentoDiario = { 1500.0, 2800.0, 2100.0, 3500.0, 1800.0, 2200.0, 2800.0, 3100.0, 2400.0, 2900.0,
+				2600.0, 3200.0 };
+
+		// calcula o menor valor de faturamento diário
+		double menorFaturamentoDiario = faturamentoDiario[0];
+		for (int i = 1; i < faturamentoDiario.length; i++) {
+			if (faturamentoDiario[i] < menorFaturamentoDiario) {
+				menorFaturamentoDiario = faturamentoDiario[i];
+			}
+		}
+		System.out.println("Menor faturamento diário: " + menorFaturamentoDiario);
+
+		// calcula o maior valor de faturamento diário
+		double maiorFaturamentoDiario = faturamentoDiario[0];
+		for (int i = 1; i < faturamentoDiario.length; i++) {
+			if (faturamentoDiario[i] > maiorFaturamentoDiario) {
+				maiorFaturamentoDiario = faturamentoDiario[i];
+			}
+		}
+		System.out.println("Maior faturamento diário: " + maiorFaturamentoDiario);
+
+		// calcula a média mensal de faturamento diário
+		double somaFaturamentoDiario = 0;
+		for (int i = 0; i < faturamentoDiario.length; i++) {
+			somaFaturamentoDiario += faturamentoDiario[i];
+		}
+		double mediaMensalFaturamentoDiario = somaFaturamentoDiario / faturamentoDiario.length;
+
+		// calcula o número de dias no mês em que o faturamento diário foi superior à
+		// média mensal
+		int numeroDiasSuperiorMedia = 0;
+		for (int i = 0; i < faturamentoDiario.length; i++) {
+			if (faturamentoDiario[i] > mediaMensalFaturamentoDiario) {
+				numeroDiasSuperiorMedia++;
+			}
+		}
+		System.out.println("Número de dias com faturamento diário superior à média mensal: " + numeroDiasSuperiorMedia);
+	}
+}

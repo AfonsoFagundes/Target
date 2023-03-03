@@ -1,0 +1,37 @@
+package Prova;
+
+import java.util.Scanner;
+
+public class Teste02 {
+
+	public static void main(String[] args) {
+		
+		Scanner sc = new Scanner(System.in);
+
+		double [] faturamentosDiarios = new double [22];
+		
+		
+		double maiorValor = Integer.MIN_VALUE;
+		double menorValor = Integer.MAX_VALUE;
+		
+		System.out.println("Digite os valores dos faturamentos diarios: ");
+		for (int i=0; i < faturamentosDiarios.length; i++) {
+			System.out.printf("  " + faturamentosDiarios[i]);
+			sc.nextDouble();
+		}
+		//Esse array encotra o maior valor do Faturamento Diario
+			maiorValor = faturamentosDiarios[0];
+		for (int i=1; i < faturamentosDiarios.length; i++) {
+			if (faturamentosDiarios[i] > maiorValor) {
+				maiorValor = faturamentosDiarios [i];
+				
+			}
+		}
+		System.out.printf("Vetor: ");
+		
+		for (int i=0; i < faturamentosDiarios.length; i++) {
+			System.out.printf("  " + faturamentosDiarios[i]);
+		}
+	       System.out.printf("Maior Valor" + maiorValor);
+	}
+}
