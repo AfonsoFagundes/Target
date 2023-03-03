@@ -1,4 +1,0 @@
-INDEX VERSION 1.131+C:\Users\afons\OneDrive\Área de Trabalho\TargetTest\.metadata\.plugins\org.eclipse.jdt.core
-2300106708.index
-1865797976.index
-413640781.index
